@@ -12,13 +12,14 @@ img = cv2.imread("check.png")
 any_pxl= img[0,0]
 print(any_pxl)
 
-in_img= img[0:,0:]
+in_img= img[250:,400:]
 print(in_img)
-cv2.imshow("in_img",in_img)
+out_img= cv2.resize(in_img,(800,500))
+cv2.imshow("in_img",out_img)
 
-plt.xticks([])
-plt.yticks([])
-plt.imshow(in_img)
-plt.show()
+# plt.xticks([])
+# plt.yticks([])
+# plt.imshow(in_img)
+# plt.show()
 
 cv2.waitKey(0)
