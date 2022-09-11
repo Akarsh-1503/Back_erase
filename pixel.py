@@ -5,8 +5,8 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread("check.png")
 
-cv2.imshow("image",img)
-img =cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+# cv2.imshow("image",img)
+# img =cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 
 any_pxl= img[0,0]
